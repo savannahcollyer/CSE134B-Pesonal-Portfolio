@@ -17,37 +17,34 @@
 
 <body>
     <header>
-        <nav id = "right nav">
+        <nav id = "rightNav">
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
             <a href="findMe.html">Find Me</a>
         </nav>
-        <section id = "left nav">
-            <canvas id="rectangleCircle" width="300" height="176">
-            </canvas>
-            <script>
-                var circle = document.getElementById("rectangleCircle");
-                var creatingCircle = circle.getContext("2d");
-                creatingCircle.beginPath();//circle shape begin
-                creatingCircle.arc(100,100,75,4,4*Math.PI);//circle x, y and size of the circle
-                creatingCircle.stroke();//stroke of the circle
-                creatingCircle.font = "30px Times New Roman";//Creating a font
-                creatingCircle.strokeText("About Me",40,110);// Creating text inside the circle
-            </script>
-        </section>
-        
+        <canvas id="rectangleCircle" width="300" height="176">
+        </canvas>
+        <script>
+            var circle = document.getElementById("rectangleCircle");
+            var creatingCircle = circle.getContext("2d");
+            creatingCircle.beginPath();//circle shape begin
+            creatingCircle.arc(100,100,75,4,4*Math.PI);//circle x, y and size of the circle
+            creatingCircle.stroke();//stroke of the circle
+            creatingCircle.font = "30px Times New Roman";//Creating a font
+            creatingCircle.strokeText("About Me",40,110);// Creating text inside the circle
+        </script>        
     </header>
     <main>
         <h2>Reading</h2>
         <p> I try to read about 4 books a month which means that I have read <em>many</em> books in my life. I really enjoy thriller books that have an unexpected plot twist at the end. 
             My  <strong>absolute favorite book</strong> that I highly reccomend is <a href="https://www.amazon.com/Silent-Patient-Alex-Michaelides/dp/1250301696">The Silent Patient.</a> </p>
-        <p>My next top 4 books are:</p>
-        <ol>
+        <p>Other books I reccomend:</p>
+        <ul>
             <li><a href="https://www.amazon.com/Baby-Teeth-Novel-Zoje-Stage/dp/1250170753">Baby Teeth</a></li>
             <li><a href="https://www.amazon.com/Plot-Jean-Hanff-Korelitz/dp/125079076X">The Plot</a></li>
             <li><a href="https://www.amazon.com/Last-Thing-He-Told-Me/dp/1501171348">The Last Thing He Told Me</a></li>
             <li><a href="https://www.amazon.com/We-Were-Liars-Lockhart/dp/038574126X">We Were Liarrs</a></li>
-        </ol>
+        </ul>
         <p>In addition to novels I also really like to read poetry and have even written a few of my own poems. The poem below is one of my favorites because it is so simple yet so comforting.</p>
         <pre>
             The Orange
@@ -73,14 +70,14 @@
         <p>When I was younger, my dad had 6 signature meals he used to make for my siblings and I. I used to sit in the kitchen and watch him while he'd teach me how to chop certain 
             vegetables and what spices should be used in which meals. Since I left home for college, I have perfected my dad's signature recipes and have tried to recreate at least one new 
             recipe every week. My favorite kind of foods to make are soups because I feel like nothing is more comforting than homemade soup on a cold day.</p>
-        <p>Here are some of my favorite recipes I have tried:</p>
-        <ul>
+        <p>My favorite recipes I've tried:</p>
+        <ol>
             <li><a href="https://cooking.nytimes.com/recipes/1021277-sheet-pan-baked-feta-with-broccolini-tomatoes-and-lemon3">Feta and Veggies Sheet Pan</a></li> 
             <li><a href="https://themodernproper.com/broccoli-pesto-pasta">Broccoli Pesot Pasta</a></li> 
             <li><a href="https://www.tasteofhome.com/recipes/italian-sausage-kale-soup/">Sausage and Kale Soup</a></li> 
             <li><a href="https://www.spendwithpennies.com/french-dip-sandwich/">French Dip Sandwiches</a></li> 
 
-        </ul>
+        </ol>
         <template>This is hidden content but soon I will show a picture of my favorite recipe that I've done!</template>
         <h2>Pets</h2>
         <p>At home I have 5 dogs: a Golden Retriever named Leo, a Border Collie named Hope, a Chihuhua mix named Ebby, a Chihuhua mix named Lily, and a Chiweenie named Kojak. I love to take my dogs
@@ -100,7 +97,7 @@
             <li>Westworld</li>
         </ul>
         <h2>Music</h2>
-        <iframe src="https://open.spotify.com/embed/playlist/4jDx9G5OuE4DXXibUVKNHU" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>        <p>Click on the play button to play my favorite song:</p>
+        <iframe src="https://open.spotify.com/embed/playlist/4jDx9G5OuE4DXXibUVKNHU" width="1000" height="380" allow="encrypted-media"></iframe>        <p>Click on the play button to play my favorite song:</p>
             <audio controls>
             <source src="images/TheDistricts.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
