@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Simple demo Web page for CSE 134B" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> Contact Me</title>
+	<link href="images/favicon.jpeg" rel="icon" />
+</head>
+<body>
+    <main>
+    <h1>Contact Me!</h1>
+    <h2>LinkedIn</h2>
+    <p><a href="www.linkedin.com/in/savannah-collyer">/savannah-collyer</a></p>
+    <h2>Email Me</h2>
+    <button onclick="location.href='mailto:scollyer@ucsd.edu'" class="iconbuttons">scollyer@ucsd.edu</button><br></br>
+    <h2> Questions?</h2>
+        <form action="/action_page.php">
+            <fieldset>
+            <legend>Let Me Know:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="explanation">Reason for Contacting:</label>
+            <input list="explanationList" name="explanation" id="explanation"> <br><br>
+            <datalist id="explanationList">
+                <option value="Concerns about website">
+                <option value="Questions about projects">
+                <option value="Other: ">
+                </datalist>
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="communicateList">Preferred Method of Communcation:</label>
+            <select name="communicateList" id="communicateList">
+                <optgroup label="By Phone: ">
+                <option value="Call Me">Call Me</option>
+                <option value="Text Me">Text Me</option>
+                </optgroup>
+                <optgroup label="By computer: ">
+                <option value="Email Me">Email Me</option>
+                </optgroup>
+                </select>
+            <br></br>
+            <label for="message">Message:</label><br></br>
+            <textarea type="message" id="message" name="message"></textarea><br><br> 
+            <button type="submit" value="Submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
